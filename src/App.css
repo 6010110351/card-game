@@ -32,8 +32,8 @@
  }
  
  .activeCard {
-  color: red;
-  background: pink;
+  color: #4CAF50;
+  background: white;
  }
 
  .button{
@@ -47,4 +47,12 @@
   font-size: 16px;
  }
 
- 
+ h1{
+  background: rgb(238, 130, 238);
+ }
+ h2{
+  background: rgb(255, 165, 0);
+ }
+ div{
+   background: rgb(182, 228, 71);
+ }

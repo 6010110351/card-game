@@ -19,6 +19,7 @@ class App extends Component{
   render() {
     return (
       <div className="App">
+        <h1 id="title">Card Game(You can play 3 time)</h1>
         {  
           <WordCard value={item.toUpperCase()}/>     
         }
@@ -26,7 +27,6 @@ class App extends Component{
         <h2 id="go">Let Go !!!</h2>
         <h2 id="blink"></h2>
         <button onClick= {this.reword}> Regame </button> <br></br>  <br></br> 
-
       </div>
     );
   }
