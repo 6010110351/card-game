@@ -38,6 +38,7 @@
  }
 
  .button{
+  margin-left: 1em;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -57,3 +58,9 @@
  div{
    background: rgb(182, 228, 71);
  }
+.button2 {
+  background-color: #008CBA;
+} 
+.button3 {
+  background-color: #f44336;
+} 

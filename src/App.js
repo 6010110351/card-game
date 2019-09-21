@@ -49,9 +49,9 @@ class App extends Component{
         <h2 id="blink"></h2>
         <h2 id="blink1"></h2>
         <h2 id="blink2"></h2>
-        <button onClick= {this.reword}> Regame </button> <br></br>  <br></br> 
-        <button onClick= {this.request}> Give up </button> <br></br>  <br></br>  
-        <button onClick= {this.close}> Quit </button> <br></br>  <br></br>
+        <button class="button" onClick= {this.reword}> Regame </button> 
+        <button class="button button2"  onClick= {this.request}> Give up </button> 
+        <button class="button button3"  onClick= {this.close}> Quit </button> <br></br><br></br>
 
       </div>
     );
