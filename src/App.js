@@ -38,12 +38,14 @@ class App extends Component{
     return (
       <div className="App">
         <h1 id="title">Card Game(You can play 3 time)</h1>
+       
         {  
           <WordCard value={item.toUpperCase()} 
                     getAnswer = {this.getAnswer}  
                     request = {this.state.requestAnswer}/>     
        
         }
+      
         
         <h2 id="go">Let Go !!!</h2>
         <h2 id="blink"></h2>

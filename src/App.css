@@ -1,4 +1,6 @@
 .App {
+  height: 700px;
+  background-color: antiquewhite;
   font-style: italic;
   text-align: center;
 }
@@ -9,7 +11,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,9 +25,11 @@
 }
 
  .card {
+  background-color:  aqua ;
+  color: peru;
   display: inline-block;
   text-align: center;
-  width: 3em;
+  width: 4em;
   font-size: 2em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   margin: 1em;
@@ -33,12 +37,13 @@
  }
  
  .activeCard {
-  color: #4CAF50;
-  background: white;
+  color: rgb(175, 76, 167);
+  background: rgb(75, 158, 110);
  }
 
  .button{
-  margin-left: 1em;
+  font-style: italic;
+  margin-left: 4em;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -50,13 +55,15 @@
  }
 
  h1{
+  padding: 0.5em;
   background: rgb(238, 130, 238);
  }
  h2{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 150px;
+  margin-left: 80px;
   background: rgb(255, 165, 0);
- }
- div{
-   background: rgb(182, 228, 71);
  }
 .button2 {
   background-color: #008CBA;
