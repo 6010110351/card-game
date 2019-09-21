@@ -15,7 +15,6 @@ const prepareStateFromWord = (given_word) => {
     }
 }
 
-
 export default class WordCard extends
 Component {
 
@@ -32,15 +31,18 @@ Component {
                    document.getElementById('blink1').innerHTML = `Answer is ${guess.join('').toString()}`
                    document.getElementById('go').innerHTML = `You Win !!!!!!!!!!!! `
             }
-            else{
-                    
+            else{         
                     this.setState({guess: [], attempt: this.state.attempt + 1})
                     document.getElementById('blink1').innerHTML = `${guess.join('').toString()}`
                     document.getElementById('go').innerHTML = `You Lose !!!!!!!!!!!! ,Attempt: ${this.state.attempt} `
+                    
+                    if(this.state.attempt == 2) {
+                        document.getElementById('blink2').innerHTML = `Position 2 is ${this.state.chars.join('')[1].toString()} and Position 4 is ${this.state.chars.join('')[3].toString()} `
+                    }
                     if(this.state.attempt == 3 ){
                         document.getElementById('blink').innerHTML = `Game Over`
                         document.getElementById('blink2').innerHTML = `Answer is ${this.state.chars.join('').toString()}`
-                        setTimeout(() => window.location.reload(false),3000) 
+                        setTimeout(() => window.location.reload(false),3500) 
                     }
                     
             }

@@ -15,7 +15,7 @@ class App extends Component{
       {
         window.location.reload(false)
       }
-
+    
   render() {
     return (
       <div className="App">
@@ -29,6 +29,7 @@ class App extends Component{
         <h2 id="blink1"></h2>
         <h2 id="blink2"></h2>
         <button onClick= {this.reword}> Regame </button> <br></br>  <br></br> 
+        <button onClick= {this.changeword}> Change word </button> <br></br>  <br></br> 
       </div>
     );
   }
