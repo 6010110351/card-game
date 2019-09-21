@@ -4,7 +4,7 @@ import './App.css';
 import CharacterCard from './CharacterCard';
 import WordCard from './WordCard';
 
-const word = ['Hello','Supawit']
+const word = ['Hello','Supawit','Good']
 var item = word[Math.floor(Math.random()*word.length)];
 
 class App extends Component{
@@ -15,7 +15,9 @@ class App extends Component{
           <WordCard value={item.toUpperCase()}/>     
         }
         
-        <h2 id="nod">Let Go !!!</h2>
+        <h2 id="go">Let Go !!!</h2>
+        <h2 id="blink"></h2>
+
       </div>
     );
   }

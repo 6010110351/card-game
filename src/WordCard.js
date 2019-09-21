@@ -23,21 +23,25 @@ Component {
         super(props)
         this.state = prepareStateFromWord(this.props.value)
     }
-    
     activationHandler = (c) => {
         let guess = [...this.state.guess, c.toUpperCase()]
         this.setState({guess})
         if(guess.length == this.state.chars.length){
-            console.log(guess.join('').toString())
-            console.log(this.state.chars.join('').toString())
             if(guess.join('').toString() == this.state.chars.join('').toString()){
                    this.setState({guess: [], completed: true})
-                   document.getElementById('nod').innerHTML = `You Win !!!!!!!!!!!! `
+                   document.getElementById('go').innerHTML = `You Win !!!!!!!!!!!! `
             }
             else{
                     this.setState({guess: [], attempt: this.state.attempt + 1})
-                    document.getElementById('nod').innerHTML = `You Lose !!!!!!!!!!!! ,Attempt: ${this.state.attempt} `
+                    document.getElementById('go').innerHTML = `You Lose !!!!!!!!!!!! ,Attempt: ${this.state.attempt} `
+                    if(this.state.attempt == 3 ){
+                        document.getElementById('blink').innerHTML = `Game Over`
+                        setTimeout(() => window.location.reload(false),3000) 
+                    }
+                    
             }
+            console.log("Wrong word :" + guess.join('').toString())
+            console.log("Correct word :" + this.state.chars.join('').toString())
         }
     }
 render() {
