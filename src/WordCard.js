@@ -29,13 +29,17 @@ Component {
         if(guess.length == this.state.chars.length){
             if(guess.join('').toString() == this.state.chars.join('').toString()){
                    this.setState({guess: [], completed: true})
+                   document.getElementById('blink1').innerHTML = `Answer is ${guess.join('').toString()}`
                    document.getElementById('go').innerHTML = `You Win !!!!!!!!!!!! `
             }
             else{
+                    
                     this.setState({guess: [], attempt: this.state.attempt + 1})
+                    document.getElementById('blink1').innerHTML = `${guess.join('').toString()}`
                     document.getElementById('go').innerHTML = `You Lose !!!!!!!!!!!! ,Attempt: ${this.state.attempt} `
                     if(this.state.attempt == 3 ){
                         document.getElementById('blink').innerHTML = `Game Over`
+                        document.getElementById('blink2').innerHTML = `Answer is ${this.state.chars.join('').toString()}`
                         setTimeout(() => window.location.reload(false),3000) 
                     }
                     

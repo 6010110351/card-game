@@ -26,6 +26,8 @@ class App extends Component{
         
         <h2 id="go">Let Go !!!</h2>
         <h2 id="blink"></h2>
+        <h2 id="blink1"></h2>
+        <h2 id="blink2"></h2>
         <button onClick= {this.reword}> Regame </button> <br></br>  <br></br> 
       </div>
     );
